@@ -1,1 +1,53 @@
+{
+  "suggest.autoTrigger": "always",   // 总是自动触发补全
+  "suggest.noselect": true,          // 补全时默认选中第一项
 
+  // 补全项类型的图标映射（使用 Nerd Font 特殊符号，直观区分补全项类型）
+  "suggest.completionItemKindLabels": {
+    "class": "\uf0e8",        // 类（class）类型补全项显示  图标
+    "color": "\ue22b",        // 颜色（color）类型补全项显示  图标
+    "constant": "\uf8fe",     // 常量（constant）类型补全项显示 󰿾 图标
+    "default": "\uf29c",      // 默认类型补全项显示 󊜼 图标
+    "enum": "\uf435",         // 枚举（enum）类型补全项显示 󓍵 图标
+    "enumMember": "\uf02b",   // 枚举成员（enumMember）类型补全项显示  图标
+    "event": "\ufacd",        // 事件（event）类型补全项显示 󂬍 图标
+    "field": "\uf93d",        // 字段（field）类型补全项显示 󤤽 图标
+    "file": "\uf723",         // 文件（file）类型补全项显示 󰜣 图标
+    "folder": "\uf115",       // 文件夹（folder）类型补全项显示  图标
+    "function": "\u0192",     // 函数（function）类型补全项显示 ƒ 图标
+    "interface": "\uf417",    // 接口（interface）类型补全项显示 󐕗 图标
+    "keyword": "\uf1de",      // 关键字（keyword）类型补全项显示  图标
+    "method": "\uf6a6",       // 方法（method）类型补全项显示 󦩍 图标
+    "module": "\uf40d",       // 模块（module）类型补全项显示 󐍍 图标
+    "operator": "\uf915",     // 运算符（operator）类型补全项显示 󤤕 图标
+    "property": "\ue624",     // 属性（property）类型补全项显示  图标
+    "reference": "\ufa46",    // 引用（reference）类型补全项显示 󩽆 图标
+    "snippet": "\ue60b",      // 代码片段（snippet）类型补全项显示  图标
+    "struct": "\ufb44",       // 结构体（struct）类型补全项显示 󰭄 图标
+    "text": "\ue612",         // 文本（text）类型补全项显示  图标
+    "typeParameter": "\uf728",// 类型参数（typeParameter）类型补全项显示 󱴨 图标
+    "unit": "\uf475",         // 单位（unit）类型补全项显示 󑝼 图标
+    "value": "\uf89f",        // 值（value）类型补全项显示 󢟟 图标
+    "variable": "\ue71b"      // 变量（variable）类型补全项显示  图标
+  },
+
+  // ========== 语法诊断（diagnostic）配置 ==========
+  // 错误行左侧显示的标识符号：
+  "diagnostic.errorSign": "\uf467",
+  // 警告行左侧显示的标识符号：
+  "diagnostic.warningSign": "\uf071",
+  // 信息提示行左侧显示的标识符号：
+  "diagnostic.infoSign": "\uf129",
+  // 提示行左侧显示的标识符号：
+  "diagnostic.hintSign": "\uf864",
+  // 禁用 Ale 插件接管 Coc 的诊断功能（使用 Coc 自身的诊断体系）
+  "diagnostic.displayByAle": false,
+  // 插入模式下不刷新语法诊断（避免输入时频繁弹出诊断提示，干扰编辑）
+  "diagnostic.refreshOnInsertMode": false,
+  // 实时检查当前编辑行的语法错误（聚焦哪行就检查哪行）
+  "diagnostic.checkCurrentLine": true,
+  // 行尾虚拟文本的前缀：❯❯❯ （让诊断信息更醒目，区分代码和提示）
+  "diagnostic.virtualTextPrefix": " ❯❯❯ ",
+  // 启用行尾虚拟文本显示诊断信息（不用打开弹窗，直接在行尾看错误/警告）
+  "diagnostic.virtualText": true,
+}
